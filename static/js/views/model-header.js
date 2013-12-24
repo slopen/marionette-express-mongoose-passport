@@ -21,12 +21,7 @@ define([
         },
 
         saveModel: function(){
-
-            this.model.save()
-                .fail (function (res, error, responseText){
-                    console.error('saving failed', res, error, responseText);
-                });
-
+            this.model.save();
             return false;
         },
 

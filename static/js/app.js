@@ -37,11 +37,11 @@ define ([
     };
     app.initNavigation = function(){
 
-      // $(document).on('click', 'a', function (){
-      //   // links click to router navigate
-      //   app.router.navigate( $(this).attr('href'), true );
-      //   return false;
-      // });
+      $(document).on('click', 'a', function (){
+        // links click to router navigate
+        app.router.navigate( $(this).attr('href'), true );
+        return false;
+      });
 
       Backbone.history.start ();   
     };

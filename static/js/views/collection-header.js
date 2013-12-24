@@ -30,11 +30,7 @@ define([
 
 	        this.collection.create({
 	               created_at: (new Date()).getTime()
-	            }, {wait: true})
-
-                .fail (function (res, error, responseText){
-                    console.error('creating failed', res, error, responseText);
-                });;
+	            }, {wait: true});
 
 	        return false;
         },
