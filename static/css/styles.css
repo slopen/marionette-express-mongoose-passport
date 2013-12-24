@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+}
+body {
+  background: #edece4;
+  padding: 10px;
+  height: 100%;
+}
+#main {
+  box-sizing: border-box;
+  padding: 10px 16px;
+  background: #FFF;
+  min-height: 100%;
+  position: relative;
+}
+#main .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+}
+#main .controls {
+  margin: 20px 0;
+  background: #F6F6F6;
+  padding: 16px;
+}
+#main .items-list > li {
+  background: #FFF;
+  overflow: hidden;
+  border-bottom: #eee 1px solid;
+  margin-bottom: 20px;
+}
+#main .items-list > li > div {
+  margin-bottom: 10px;
+}

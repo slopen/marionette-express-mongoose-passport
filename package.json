@@ -1,0 +1,16 @@
+{
+    "name": "marionette-express",
+    "description": "marionette express application",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "express": "*",
+        "mongodb": "*",
+        "mongoose": "*",
+        "connect-mongo" : "*",
+        "passport": "*",
+        "passport-local": "*",
+        "vows": "*",
+        "zombie": "*"  
+    }
+}

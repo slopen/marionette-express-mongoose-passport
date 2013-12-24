@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>marionette express</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen"/>
+
+    <style>#preloader{font-size:12px;position:absolute;top:50%;left:25%;width:45%;text-align:center}</style>
+
+    <!-- scripts -->
+    <script data-main="js/main.js" src="js/libs/requirejs.js"></script>
+    <script>
+      document.onready = function(){
+        document.getElementById('resource').innerHTML = 'Connecting to ' + location.href;
+        requirejs.onResourceLoad = function (context, map, depArray){
+          var element = document.getElementById('log');
+          if (element) element.innerHTML = map.name.replace('-', ' ');
+        };
+      };
+    </script>
+
+</head>
+<body>
+
+    <div id="main">
+        <div id="preloader">
+            <div id="resource"></div>
+            <div id="log"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+
